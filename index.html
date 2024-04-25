@@ -1,0 +1,1448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abhishek</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+
+        margin: 0;
+        padding: 0;   
+        box-sizing: border-box;
+        text-decoration: none; 
+        border: none; 
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #fdfdfd;   
+    --text-color:#0f0f0f;  
+    --main-color:#ffc402; 
+    --white-color: #fdfdfd; 
+    --shadow-color: rgba(0, 0, 0, .2);
+    
+    }
+
+html {
+        font-size: 62.5%;
+        overflow-x: hidden; 
+     }
+        
+body {
+    background: var(--bg-color); color: var(--text-color);
+        
+    }
+
+.header {
+        text-decoration: none; 
+        position: fixed;  
+        top: 0;  
+        left: 0;  
+        width: 100%; 
+        padding: 2rem 7%; 
+        background:var(--white-color); 
+        display: flex; 
+        align-items: center; 
+        z-index: 100;   
+        }
+
+ .home {
+        width: 100%;
+        height: 800px;
+        position: relative;
+        background: green;
+        }
+        
+          
+
+
+
+.logo {  
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: var(--text-color); 
+        font-weight: 600;
+        cursor: default;
+        margin-right: auto;
+     }
+            
+.navbar a {
+        text-decoration: none; 
+        position: relative;
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 600; 
+        margin-right: 3.5rem;
+    }
+.navbar a.active::before {
+
+        content: '';       
+        position: absolute;        
+        left: 0;       
+        bottom: -6px;       
+        width: 100%;       
+        height: .2rem;       
+        background: var(--text-color);}
+
+
+.video {
+    height: 50vh;
+}
+
+.video video {
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.position-relative {
+    position: relative;
+  }
+  
+  .container {
+    width: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+ 
+  .detail {
+    position: absolute; 
+    margin-top: 10rem;
+    bottom: -25rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    max-width: 80%; 
+}
+
+.detail p {
+    font-size: 1.5rem; 
+}
+.detail,
+.detail a {
+    color: #000;
+}
+
+.detail h2 {
+    font-size: 55px;
+}
+
+.detail a {
+    font-size: 20px;
+}
+
+.detail .arrow {
+    font-size: 20px;
+    animation: arrow 1s infinite;
+    transition: all .3s ease;
+}
+
+ 
+@keyframes arrow {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+span {
+
+    color: var(--main-color);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 40px;
+    margin-top: 0px;
+    background: transparent;
+}
+
+
+.about-img img {
+    
+    width: 40vw;
+    
+    }
+    
+.heading {
+    
+    font-size: 4.5rem;
+    text-align: center;
+    
+}
+
+
+.about-content h2 {
+    margin-top: 15rem;
+    margin-right: 5rem;
+     text-align: left; 
+     line-height: 1.2;}
+
+.about-content h3 {
+font-size: 2rem;
+
+}
+
+.about-content p {
+font-size: 1.6rem;
+margin: 2rem 0 3rem;}
+
+
+.about .q{
+    display: flex;
+}
+
+.about .q .about-content{
+    bottom:30rem;
+}
+
+.container.py-5.text-white .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container.py-5.text-white .col-md-3 {
+    flex: 0 0 25%; 
+    padding: 10px;
+    text-align: center;
+}
+
+.container.py-5.text-white .display-4 {
+    font-size: 2.5rem;
+    color: #ffc402; 
+    font-weight: bold;
+}
+
+.heading-small {
+    display: block;
+    color: #000;
+    font-size: 1.5rem; 
+    margin-top: 0.5rem;
+}
+
+.maintitle {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.resume .container{
+    width: 100%;
+}
+
+.section-title {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.section-title .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.resume-single-list {
+    flex: 1 0 50%;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    background-color: #feff3f;
+    border-radius: 10px; 
+}
+
+.resume-single-list:hover {
+    transform: translateY(-5px); 
+}
+
+.resume-single-list .inner {
+    border-left: 3px solid #333;
+    padding: 20px; 
+}
+
+.resume-single-list .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resume-single-list .title h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.resume-single-list .title span {
+    font-size: 16px;
+    color: #777;
+}
+
+.resume-single-list .date-of-time span {
+    font-size: 16px;
+    color: #333;
+}
+
+.resume-single-list .description {
+    font-size: 16px;
+    color: #777;
+}
+
+
+.skills__container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skills__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px; 
+    width: 200px; 
+  }
+  
+  .skills__card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .rating-bar {
+    background-color: #eee;
+    height: 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 80%; 
+  }
+  
+  .rating-bar__fill {
+    height: 100%;
+    background-color:#feff3f;
+    ;
+  }
+  
+  
+  .skill__name {
+    color: var(--white);
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+.portfolio {
+    padding-bottom: 10rem;
+}
+    
+.portfolio h2 
+ {
+    
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    
+    }
+    
+.portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin: 8rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    }
+    
+
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1)
+
+}
+
+.portfolio-box {
+    position: relative; 
+}
+.portfolio-box .portfolio-layer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(rgba(0, 0, 0, .1), #ffd035); 
+   color: var(--white-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 0 4rem;
+   opacity: 0;
+   transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    opacity: 1;
+}
+
+.portfolio-layer h4{
+font-size: 3rem;
+}
+
+.portfolio-layer a{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 5rem;
+     height: 5rem;
+     background: var(--white-color);
+     border-radius: 50%;
+     text-decoration: none;
+}
+
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: #333;
+}
+
+
+.contact{
+    margin-top: -20rem;
+}
+
+.contact .btn {
+    padding: 10px 20px; 
+    background-color: var(--main-color); 
+    color: var(--white-color); 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact .btn:hover {
+    transform: translateY(-5px); 
+}
+.contact {
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    padding: 40px;
+    padding-top: 70px;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+
+.contact-text {
+    align-content: center;
+}
+
+.contact-text h2 {
+    font-size: 60px;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.contact-text h2 span {
+    color: #ffc402;
+}
+
+.contact-text h4 {
+    margin: 15px 0;
+    color: rgb(59, 57, 57);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 10rm;
+}
+
+.contact-list i {
+    display: inline-block;
+    color: #ffc402;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+    padding: 10px;
+}
+
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffc402;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffc402;
+    text-decoration: none;
+    margin: 0px 15px 0px 0;
+    opacity: 1;
+}
+
+.contact-icons i:hover {
+    background: #ffc402;
+    color: var(--white-color);
+    box-shadow: 0 0 20px #ffc402;
+}
+.contact-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%; 
+}
+
+.container-box {
+    flex: 1 1 35rem; 
+    background: var(--bg-color);
+    padding:  3rem;
+    border-radius: 2rem;
+    box-shadow: 0.6rem 0.6rem var(--main-color);
+    text-align: center;
+    background-color: #FAF9F6;
+    margin-right: auto; 
+}
+
+.main {
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+    row-gap: 2rem;
+    column-gap: 6rem;
+    align-items: center;
+}
+
+.images {
+    margin-left: auto;
+    width: 250px; 
+}
+
+.images img {
+    width: 100%; 
+    max-width: 100%; 
+    border-radius: 50%; 
+    box-shadow: 0 0 10px #D1D9E6;
+}
+  .main {
+    position: relative;
+  }
+  .big-circle {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 6px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    animation: Rotate 20s linear infinite;
+    -webkit-animation: Rotate 20s linear infinite;
+  }
+  .icon-block {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+  }
+  .icon-block img {
+    margin: 0px auto;
+    width: 60%;
+    animation: Rotate-reverse 20s linear infinite;
+    -webkit-animation: Rotate-reverse 20s linear infinite;
+  }
+  .icon-block:first-child {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .icon-block:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+  }
+  .icon-block:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+  }
+  .icon-block:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .rounding-sec {
+    position: relative;
+    height: 400px;
+    width: 400px;
+  }
+  .images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  
+  @keyframes Rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes Rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes Rotate-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @-webkit-keyframes Rotate-reverse {
+    from {
+      -webkit-transform: rotate(360deg);
+    }
+    to {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+  
+@keyframes leftSideAni {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes navani {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes topSideAni {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+  .chatbot-toggler {
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffc402;
+    transition: all 0.2s ease;
+  }
+  body.show-chatbot .chatbot-toggler {
+    transform: rotate(90deg);
+  }
+  .chatbot-toggler span {
+    color: #fff;
+    position: absolute;
+  }
+  .chatbot-toggler span:last-child,
+  body.show-chatbot .chatbot-toggler span:first-child  {
+    opacity: 0;
+  }
+  body.show-chatbot .chatbot-toggler span:last-child {
+    opacity: 1;
+  }
+  .chatbot {
+    position: fixed;
+    right: 35px;
+    bottom: 90px;
+    width: 420px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.5);
+    transform-origin: bottom right;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    transition: all 0.1s ease;
+  }
+  body.show-chatbot .chatbot {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+  .chatbot header {
+    padding: 16px 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #ffc402;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .chatbot header span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    display: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  header h2 {
+    font-size: 1.4rem;
+  }
+  .chatbot .chatbox {
+    overflow-y: auto;
+    height: 510px;
+    padding: 30px 20px 100px;
+  }
+  .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+    width: 6px;
+  }
+  .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 25px;
+  }
+  .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+  }
+  .chatbox .chat {
+    display: flex;
+    list-style: none;
+  }
+  .chatbox .outgoing {
+    margin: 20px 0;
+    justify-content: flex-end;
+  }
+  .chatbox .incoming span {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    cursor: default;
+    text-align: center;
+    line-height: 32px;
+    align-self: flex-end;
+    background: #ffc402;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+  }
+  .chatbox .chat p {
+    white-space: pre-wrap;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    max-width: 75%;
+    color: #fff;
+    font-size: 0.95rem;
+    background: #ffc402;
+  }
+  .chatbox .incoming p {
+    border-radius: 10px 10px 10px 0;
+  }
+  .chatbox .chat p.error {
+    color: #721c24;
+    background: #f8d7da;
+  }
+  .chatbox .incoming p {
+    color: #000;
+    background: #f2f2f2;
+  }
+  .chatbot .chat-input {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 3px 20px;
+    border-top: 1px solid #ddd;
+  }
+  .chat-input textarea {
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    max-height: 180px;
+    padding: 15px 15px 15px 0;
+    font-size: 0.95rem;
+  }
+  .chat-input span {
+    align-self: flex-end;
+    color: #ffc402;
+    cursor: pointer;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    font-size: 1.35rem;
+  }
+  .chat-input textarea:valid ~ span {
+    visibility: visible;
+  }
+  @media (max-width: 490px) {
+    .chatbot-toggler {
+      right: 20px;
+      bottom: 20px;
+    }
+    .chatbot {
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      border-radius: 0;
+      width: 100%;
+      
+    }
+    .chatbot .chatbox {
+      height: 90%;
+      padding: 25px 15px 100px;
+    }
+    .chatbot .chat-input {
+      padding: 5px 15px;
+    }
+    .chatbot header span {
+      display: block;
+    }
+  }
+    </style>
+
+    
+</head>
+
+<body>    
+        <header class="header">            
+            <a href="#" class="logo">Portfolio.</a>           
+            <nav class="navbar">           
+            <a href="#home" class="active">Home</a>            
+            <a href="#about">About</a>           
+            <a href="#resume">Resume</a>            
+            <a href="#portfolio">Portfolio</a>           
+            <a href="#contact">Contact</a>           
+            </nav>
+            
+            </header>
+
+
+<section class="home" id="home">
+    
+        <div class="video position-relative">
+            <video autoplay muted loop id="myVideo">
+                <source src="https://video.wixstatic.com/video/c0bbc5_ea3fdc8d953b4dbcab20a021d2ef1389/1080p/mp4/file.mp4" type="video/mp4">
+            </video>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="detail">
+                            <h2 class="mb-3 fw-bold">Hi, I am Abhishek</h2>
+                            <hr class="mb-3">
+                            <p>I'm a professional Web Developer. My Main Goal is to help & satisfy the Local & Global Clients by web development solutions.</p>
+                            <div class="arrow mt-4"><i class="bi bi-chevron-down"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</section>
+
+<section class="about" id="about">
+    <div class="q">
+        <div class="about-img">
+            <img src="C:\Users\user\Downloads\First-Section-Code-main\First-Section-Code-main\Hero-Sections\me.png" alt="">
+        </div> 
+        <div class="about-content"> 
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm Here To Help Your Next Project!</h3>
+            <p>I'm a passionate and dedicated aspiring web developer with a keen interest in crafting immersive online experiences. 
+                From a young age, I've been captivated by the dynamic nature of the web and its endless possibilities for creativity and innovation.
+                My journey into the world of web development began with a curiosity-driven exploration of HTML, CSS, and JavaScript. </p> 
+            <p>  <div class="container py-5 text-white">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-3">
+                        <span id="count1" class="display-4"></span>
+                        <span class="heading-small">projects made</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="count2" class="display-4"></span>
+                        <span class="heading-small">hours spen</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="count3" class="display-4"></span>
+                        <span class="heading-small">Happy clients</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span id="count4" class="display-4"></span>
+                        <span class="heading-small">Tech stack used</span>
+                    </div>
+                </div>
+            </div>      
+            </div>
+        </div></p>
+        </div>     
+</section>
+
+    
+
+
+<section class="resume" id="resume">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2 class="heading">My<span> Resume</span></h2>
+                </div>
+            </div>
+        </div>
+        <section education>
+                    <div class="personal-experience-inner mt--40">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-12">
+                                <div class="content">
+                                    <h4 class="maintitle">Education Quality</h4>
+                                    <div class="experience-list">
+                                        <div class="resume-single-list">
+                                            <div class="inner">
+                                                <div class="heading">
+                                                    <div class="title">
+                                                        <h4>Btech Computer Science and Engineering Core</h4>
+                                                        <span>Vellore Institute of Technology(2022-2026)</span>
+                                                    </div>
+                                                    <div class="date-of-time">
+                                                        <span>8.46</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- End Single List  -->
+
+                                        <!-- Start Single List  -->
+                                        <div class="resume-single-list">
+                                            <div class="inner">
+                                                <div class="heading">
+                                                    <div class="title">
+                                                        <h4> Class 12th </h4>
+                                                        <span>Delhi Public School,Indore (2021 - 2022)</span>
+                                                    </div>
+                                                    <div class="date-of-time">
+                                                        <span>92.4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div class="resume-single-list">
+                                            <div class="inner">
+                                                <div class="heading">
+                                                    <div class="title">
+                                                        <h4> Class 10th</h4>
+                                                        <span>Delhi Public School,Indore (2019 - 2020)</span>
+                                                    </div>
+                                                    <div class="date-of-time">
+                                                        <span>95</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                <div class="content">
+                                
+                                    <h4 class="maintitle">Experience</h4>
+                                    <div class="experience-list">
+
+                                        <!-- Start Single List  -->
+                                        <div class="resume-single-list">
+                                            <div class="inner">
+                                                <div class="heading">
+                                                    <div class="title">
+                                                        <h4>Research Executive </h4>
+                                                        <span>Ecell-VIT</span>
+                                                    </div>
+                                                    <div class="date-of-time">
+                                                        <span>2023 Feb-Present</span>
+                                                    </div>
+                                                </div>
+                                                <p class="description">Responsible for organisinf various events like Futurepreneur, VisionQuest and E-Summit'24.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- End Single List  -->
+
+                                        <!-- Start Single List  -->
+                                        <div class="resume-single-list">
+                                            <div class="inner">
+                                                <div class="heading">
+                                                    <div class="title">
+                                                        <h4>FRONTEND DEVELOPER</h4>
+                                                        <span>Ascent Multiforms Pvt.Ltd</span>
+                                                    </div>
+                                                    <div class="date-of-time">
+                                                        <span>2020 JULY-Presnt</span>
+                                                    </div>
+                                                </div>
+                                                <p class="description">ipt and CSS to bring concepts to life.Developing and maintaining the user interface.Implementing design on mobile websites.Creating tools that improve site interaction regardless of the browser.</p>
+                                            </div>
+                                        </div>
+                                        <!-- End Single List  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Skill List Area  -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Tab  -->
+            </section> <!---->
+            <section class="skills">
+                <div class="section__container skills__container">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                  <div class="skills__grid">
+                    <div class="skills__card">
+                      <img src="C:\Users\Dell\Downloads\174854.webp" alt="Skill Icon" />
+                      <div class="rating-bar">
+                        <div class="rating-bar__fill" style="width: 90%;"></div>
+                      </div>
+                      <p class="skill__name">HTML</p>
+                    </div>
+                    <div class="skills__card">
+                      <img src="C:\Users\Dell\Downloads\CSS3_logo_and_wordmark.svg" alt="Skill Icon" />
+                      <div class="rating-bar">
+                        <div class="rating-bar__fill" style="width: 90%;"></div>
+                      </div>
+                      <p class="skill__name">CSS</p>
+                    </div>
+                    <div class="skills__card">
+                      <img src="C:\Users\Dell\Downloads\images.png" alt="Skill Icon" />
+                      <div class="rating-bar">
+                        <div class="rating-bar__fill" style="width: 75%;"></div>
+                      </div>
+                      <p class="skill__name">JavaScript</p>
+                    </div>
+                    <div class="skills__card">
+                      <img src="C:\Users\Dell\Downloads\react.png" alt="Skill Icon" />
+                      <div class="rating-bar">
+                        <div class="rating-bar__fill" style="width: 70%;"></div>
+                      </div>
+                      <p class="skill__name">React</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+     <div class= "portfolio-container">
+                <div class="portfolio-box">
+                    <img src="C:\Users\Dell\Downloads\portfolio1.jpg" alt="">   
+                    <div class="portfolio-layer">
+                        <h4>Amazon clone</h4>
+                        <p>Created clone of the amazon website using html, css and javascript</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+            <div class="portfolio-box">
+                <img src="C:\Users\Dell\Downloads\portfolio2.jpg" alt="">   
+                <div class="portfolio-layer">
+                    <h4>AI text converter</h4>
+                    <p>Created audio to text converter using html, CSS and React</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+ 
+        <div class="portfolio-box">
+            <img src="C:\Users\Dell\Downloads\portfolio3.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>E-commerce website</h4>
+                <p>created a fully fledget E-commerce website for the company crocet corner</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="C:\Users\Dell\Downloads\portfolio4.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>Restaurant Website</h4>
+                <p>Created a dynamic website for Chills to showcase their menu and offers scheme</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="C:\Users\Dell\Downloads\portfolio5.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>Futurepreneurs 9.0</h4>
+                <p>created a website for the college club for their flagship event</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+  
+
+        <div class="portfolio-box">
+            <img src="C:\Users\Dell\Downloads\portfolio6.jpg" alt="">   
+            <div class="portfolio-layer">
+                <h4>E-summit</h4>
+                <p>Created a platform with more that 250+ active users at a single time to play a business simulation game </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+<section class="contact" id="contact">
+    <section class="container">
+        <div class="main">
+            <div class="rounding-sec">
+                <div class="big-circle">
+                    <div class="icon-block">
+                        <img src="C:\Users\Dell\Downloads\unity-logo-24.png" alt="" />
+                    </div>
+                  
+                    <div class="icon-block">
+                        <img src="C:\Users\Dell\Downloads\visual-studio-logo-24.png"
+                            alt="" />
+                    </div>
+                    
+                    <div class="icon-block">
+                        <img src= "C:\Users\Dell\Downloads\visual-studio-logo-24.png" alt="" />
+                    </div>
+                    <div class="icon-block">
+                        <img src="C:\Users\Dell\Downloads\code-alt-regular-24.png"
+                             alt= "" />
+                     </div>
+                </div>
+                <div class="images">
+                    <img src="C:\Users\Dell\Desktop\Abhishek Maheshwari.jpeg"" alt="" class="img-w">
+                </div>
+            </div>
+    <div class="contact-container">
+    <div class="container-box">
+    <div class="contact-text">
+        
+        <h2>Contact <span>Me!</span></h2>
+        <h4>Let's Work Together</h4>
+        <div class="contact-list">
+            <li><i class='bx bxs-send'></i>abhishekmaheshwari0410@gmail.com</li>
+            <li><i class="bx bxs-phone-call" ></i>9522599604</li>
+        </div>
+        <div class="contact-icons">
+            <a href=https://github.com/Abhishekm0410 target="_blank"><i class='bx bxl-github'></i></a>
+            <!--<a href="https://www.youtube.com/channel/UCJKCYZG9spASwmpMkh3tiEg"><i class='bx bxl-youtube'></i></a>-->
+            <a href= https://www.instagram.com/abhishek_m04/ target="_blank"></i></a>
+            <a href=https://www.linkedin.com/in/abhishek-maheshwari-51b48524b/ target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <b>
+            </b>
+        <div class="button">
+           <br>
+            <a href="https://forms.gle/YwmjxgTks2tSQ8Un6" class="btn" target="_blank">Let's Connect</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+    
+<body>
+    <button class="chatbot-toggler">
+        <i class="bx bx-message-dots" style='font-size: 24px; color: white;'></i>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+  </body>
+</html>
+</section> 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const myVideo = document.getElementById('myVideo');
+    myVideo.play();
+});
+
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+    const target = document.querySelector(qSelector);
+    let startTimestamp = null;
+    const step = (timestamp) => {
+     if (!startTimestamp) startTimestamp = timestamp;
+     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+     target.innerText = Math.floor(progress * (end - start) + start);
+     if (progress < 1) {
+      window.requestAnimationFrame(step);
+     }
+    };
+    window.requestAnimationFrame(step);
+   };
+
+   
+   document.addEventListener("DOMContentLoaded", () => {
+    counterAnim("#count1", 10, 20, 1500);
+    counterAnim("#count2", 1700, 1500, 1500);
+    counterAnim("#count3", -50, 12, 1500);
+    counterAnim("#count4", 50, 6, 1500);
+   });
+
+   document.addEventListener("DOMContentLoaded", function() {
+    const ratingBars = document.querySelectorAll('.rating-bar__fill');
+  
+    ratingBars.forEach(function(bar) {
+      const width = parseFloat(bar.style.width);
+      bar.style.width = '0%'; 
+      
+      setTimeout(function() {
+        let currentWidth = 0;
+        const increment = width / 100; 
+        const animationInterval = 10; 
+  
+        const interval = setInterval(function() {
+          currentWidth += increment;
+          bar.style.width = currentWidth + '%';
+          if (currentWidth >= width) {
+            clearInterval(interval);
+          }
+        }, animationInterval);
+      }, 1000);
+    });
+  });
+  
+
+
+
+
+
+  const chatbotToggler = document.querySelector(".chatbot-toggler");
+const closeBtn = document.querySelector(".close-btn");
+const chatbox = document.querySelector(".chatbox");
+const chatInput = document.querySelector(".chat-input textarea");
+const sendChatBtn = document.querySelector(".chat-input span");
+let userMessage = null; // Variable to store user's message
+const API_KEY = "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"; // Paste your API key here
+const inputInitHeight = chatInput.scrollHeight;
+const createChatLi = (message, className) => {
+    // Create a chat <li> element with passed message and className
+    const chatLi = document.createElement("li");
+    chatLi.classList.add("chat", `${className}`);
+    let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+    chatLi.innerHTML = chatContent;
+    chatLi.querySelector("p").textContent = message;
+    return chatLi; // return chat <li> element
+}
+const generateResponse = (chatElement) => {
+    const API_URL = "https://api.openai.com/v1/chat/completions";
+    const messageElement = chatElement.querySelector("p");
+    // Define the properties and message for the API request
+    const requestOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${API_KEY}`
+        },
+        body: JSON.stringify({
+            model: "gpt-3.5-turbo",
+            messages: [{role: "user", content: userMessage}],
+        })
+    }
+    // Send POST request to API, get response and set the reponse as paragraph text
+    fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+        messageElement.textContent = data.choices[0].message.content.trim();
+    }).catch(() => {
+        messageElement.classList.add("error");
+        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+    }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+}
+const handleChat = () => {
+    userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
+    if(!userMessage) return;
+    // Clear the input textarea and set its height to default
+    chatInput.value = "";
+    chatInput.style.height = `${inputInitHeight}px`;
+    // Append the user's message to the chatbox
+    chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+    chatbox.scrollTo(0, chatbox.scrollHeight);
+    
+    setTimeout(() => {
+        // Display "Thinking..." message while waiting for the response
+        const incomingChatLi = createChatLi("Thinking...", "incoming");
+        chatbox.appendChild(incomingChatLi);
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+        generateResponse(incomingChatLi);
+    }, 600);
+}
+chatInput.addEventListener("input", () => {
+    // Adjust the height of the input textarea based on its content
+    chatInput.style.height = `${inputInitHeight}px`;
+    chatInput.style.height = `${chatInput.scrollHeight}px`;
+});
+chatInput.addEventListener("keydown", (e) => {
+    // If Enter key is pressed without Shift key and the window 
+    // width is greater than 800px, handle the chat
+    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+        e.preventDefault();
+        handleChat();
+    }
+});
+sendChatBtn.addEventListener("click", handleChat);
+closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+  
+</script>
+
+    <!--<script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>-->
+        
+
+
+
+</body>
+
+</html>
